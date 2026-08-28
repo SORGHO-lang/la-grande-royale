@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — MIERR</title>
+<meta name="description" content="Adresse, téléphone, WhatsApp, e-mail, réseaux sociaux, localisation et formulaire de contact de la MIERR.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="barre-progression"></div>
+
+<header class="entete">
+  <div class="conteneur">
+    <a href="index.html" class="logo"><img src="assets/img/logo-mierr.svg" alt="MIERR"></a>
+    <nav class="nav-principale">
+      <a href="index.html">Accueil</a>
+      <a href="la-mierr.html">La MIERR</a>
+      <a href="departements.html">Départements</a>
+      <a href="activites.html">Activités</a>
+      <a href="institut-biblique.html">Institut biblique</a>
+      <a href="presse.html">Presse</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="entete-actions">
+      <a href="contact.html" class="bouton bouton--or">Nous contacter</a>
+      <button class="bouton-menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-mobile">
+  <button class="fermer-menu" aria-label="Fermer le menu">&times;</button>
+  <a href="index.html">Accueil</a>
+  <a href="la-mierr.html">La MIERR</a>
+  <a href="departements.html">Départements</a>
+  <a href="activites.html">Activités</a>
+  <a href="institut-biblique.html">Institut biblique</a>
+  <a href="presse.html">Presse</a>
+  <a href="galerie.html">Galerie</a>
+  <a href="actualites.html">Actualités</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+  <section class="banniere-page">
+    <img src="assets/img/banniere-contact.svg" alt="">
+    <div class="conteneur banniere-contenu">
+      <div class="fil-ariane"><a href="index.html">Accueil</a> / Contact</div>
+      <h1>Nous contacter</h1>
+      <p class="lead" style="color:rgba(255,255,255,.8); max-width:640px;">L'équipe de la MIERR est à votre écoute.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur">
+      <div class="grille grille--2" style="gap:60px; align-items:start;">
+
+        <div data-anim>
+          <span class="eyebrow">Coordonnées</span>
+          <h2>Nos coordonnées</h2>
+          <table class="tableau-simple">
+            <tr><th>Adresse</th><td>[Adresse complète de la MIERR à préciser]</td></tr>
+            <tr><th>Téléphone</th><td>[Numéro de téléphone]</td></tr>
+            <tr><th>WhatsApp</th><td><a href="#" data-whatsapp>Écrire sur WhatsApp</a></td></tr>
+            <tr><th>E-mail</th><td>[adresse@mierr.org]</td></tr>
+          </table>
+
+          <h3 style="margin-top:2.5rem;">Réseaux sociaux</h3>
+          <div class="pied-reseaux" style="margin-top:1rem;">
+            <a href="#" aria-label="Facebook" style="border-color:var(--sable); color:var(--bleu);">f</a>
+            <a href="#" aria-label="YouTube" style="border-color:var(--sable); color:var(--bleu);">▶</a>
+            <a href="#" data-whatsapp aria-label="WhatsApp" style="border-color:var(--sable); color:var(--bleu);">w</a>
+            <a href="#" aria-label="Instagram" style="border-color:var(--sable); color:var(--bleu);">ig</a>
+            <a href="#" aria-label="TikTok" style="border-color:var(--sable); color:var(--bleu);">tt</a>
+          </div>
+
+          <h3 style="margin-top:2.5rem;">Localisation</h3>
+          <div style="border-radius:4px; overflow:hidden; box-shadow:var(--ombre-douce); aspect-ratio:4/3; background:var(--ivoire-2); display:flex; align-items:center; justify-content:center; color:var(--gris); text-align:center; padding:20px;">
+            [Carte Google Maps à intégrer ici — remplacer ce bloc par l'iframe Google Maps une fois l'adresse officielle confirmée.]
+          </div>
+        </div>
+
+        <div data-anim>
+          <span class="eyebrow">Formulaire</span>
+          <h2>Écrivez-nous</h2>
+          <form class="formulaire" data-formulaire data-objet="Message depuis le site MIERR" novalidate>
+            <div class="rangee">
+              <div class="champ">
+                <label for="c-nom">Nom et prénoms</label>
+                <input type="text" id="c-nom" name="Nom et prénoms" required>
+              </div>
+              <div class="champ">
+                <label for="c-tel">Téléphone <span class="optionnel">(optionnel)</span></label>
+                <input type="tel" id="c-tel" name="Téléphone">
+              </div>
+            </div>
+            <div class="champ">
+              <label for="c-email">E-mail</label>
+              <input type="email" id="c-email" name="E-mail" required>
+            </div>
+            <div class="champ">
+              <label for="c-objet">Objet</label>
+              <select id="c-objet" name="objet" required>
+                <option value="">Choisir…</option>
+                <option>Renseignement général</option>
+                <option>Institut biblique</option>
+                <option>Service des événements</option>
+                <option>Schékina</option>
+                <option>Convention annuelle</option>
+                <option>Presse</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="champ">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" name="Message" required></textarea>
+            </div>
+            <button type="submit" class="bouton bouton--bleu">Envoyer le message</button>
+            <div class="formulaire-message" role="status"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MENTIONS LEGALES -->
+  <section class="section section--alt" id="mentions">
+    <div class="conteneur-etroit">
+      <div class="section-tete" data-anim>
+        <span class="eyebrow">Informations légales</span>
+        <h2>Mentions légales</h2>
+      </div>
+      <div data-accordeon-groupe data-anim>
+        <div class="accordeon-item">
+          <button class="accordeon-tete"><span>Éditeur du site</span><span class="signe">+</span></button>
+          <div class="accordeon-corps"><div class="accordeon-corps-inner">[Nom de l'éditeur du site — MIERR — et informations légales relatives à l'organisation.]</div></div>
+        </div>
+        <div class="accordeon-item">
+          <button class="accordeon-tete"><span>Responsable de publication</span><span class="signe">+</span></button>
+          <div class="accordeon-corps"><div class="accordeon-corps-inner">[Nom et fonction du responsable de publication à préciser.]</div></div>
+        </div>
+        <div class="accordeon-item">
+          <button class="accordeon-tete"><span>Hébergement</span><span class="signe">+</span></button>
+          <div class="accordeon-corps"><div class="accordeon-corps-inner">[Nom et coordonnées de l'hébergeur du site à préciser.]</div></div>
+        </div>
+        <div class="accordeon-item">
+          <button class="accordeon-tete"><span>Propriété intellectuelle</span><span class="signe">+</span></button>
+          <div class="accordeon-corps"><div class="accordeon-corps-inner">L'ensemble des contenus (textes, images, vidéos, logo) présents sur ce site est la propriété de la MIERR, sauf mention contraire, et ne peut être reproduit sans autorisation préalable.</div></div>
+        </div>
+        <div class="accordeon-item">
+          <button class="accordeon-tete"><span>Données personnelles</span><span class="signe">+</span></button>
+          <div class="accordeon-corps"><div class="accordeon-corps-inner">[Politique de traitement des données transmises via les formulaires du site à préciser.]</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<a href="#" class="whatsapp-flottant" data-whatsapp aria-label="Contacter la MIERR sur WhatsApp">💬</a>
+
+<footer class="pied">
+  <div class="conteneur">
+    <div class="pied-grille">
+      <div>
+        <div class="pied-logo"><img src="assets/img/logo-mierr.svg" alt="MIERR"></div>
+        <p>La Mission Internationale Évangélique de Réveil et de Restauration (MIERR), fondée en 2006, est engagée dans l'annonce de l'Évangile, la formation des croyants et la restauration des vies.</p>
+        <div class="pied-reseaux">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" data-whatsapp aria-label="WhatsApp">w</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="TikTok">tt</a>
+        </div>
+      </div>
+      <div>
+        <h4>Liens rapides</h4>
+        <ul>
+          <li><a href="la-mierr.html">La MIERR</a></li>
+          <li><a href="activites.html">Activités &amp; événements</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="presse.html">Presse</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Départements</h4>
+        <ul>
+          <li><a href="departements.html#semic">SEMIC</a></li>
+          <li><a href="departements.html#jemoc">JEMOC</a></li>
+          <li><a href="departements.html#semifig">SEMIFIG</a></li>
+          <li><a href="departements.html#sections">Sections</a></li>
+          <li><a href="institut-biblique.html">Institut biblique de Sion</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>[Adresse de la MIERR]</li>
+          <li>[Téléphone]</li>
+          <li>[E-mail]</li>
+          <li><a href="contact.html">Voir la page contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pied-bas">
+      <span>© <span data-annee></span> MIERR — Tous droits réservés.</span>
+      <a href="contact.html#mentions">Mentions légales</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

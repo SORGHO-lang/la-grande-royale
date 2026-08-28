@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galerie — MIERR</title>
+<meta name="description" content="Galerie photo de la MIERR, classée par année, activité et département, avec archives historiques depuis 2006.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="barre-progression"></div>
+
+<header class="entete">
+  <div class="conteneur">
+    <a href="index.html" class="logo"><img src="assets/img/logo-mierr.svg" alt="MIERR"></a>
+    <nav class="nav-principale">
+      <a href="index.html">Accueil</a>
+      <a href="la-mierr.html">La MIERR</a>
+      <a href="departements.html">Départements</a>
+      <a href="activites.html">Activités</a>
+      <a href="institut-biblique.html">Institut biblique</a>
+      <a href="presse.html">Presse</a>
+      <a href="galerie.html" aria-current="page">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="entete-actions">
+      <a href="contact.html" class="bouton bouton--or">Nous contacter</a>
+      <button class="bouton-menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-mobile">
+  <button class="fermer-menu" aria-label="Fermer le menu">&times;</button>
+  <a href="index.html">Accueil</a>
+  <a href="la-mierr.html">La MIERR</a>
+  <a href="departements.html">Départements</a>
+  <a href="activites.html">Activités</a>
+  <a href="institut-biblique.html">Institut biblique</a>
+  <a href="presse.html">Presse</a>
+  <a href="galerie.html">Galerie</a>
+  <a href="actualites.html">Actualités</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+
+  <section class="banniere-page">
+    <img src="assets/img/banniere-galerie.svg" alt="">
+    <div class="conteneur banniere-contenu">
+      <div class="fil-ariane"><a href="index.html">Accueil</a> / Galerie</div>
+      <h1>Galerie</h1>
+      <p class="lead" style="color:rgba(255,255,255,.8); max-width:640px;">Les archives photographiques de la MIERR, classées par année, activité et département.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur">
+
+      <div class="filtres-galerie" data-anim>
+        <button class="filtre-bouton est-actif" data-filtre="tous">Toutes</button>
+        <button class="filtre-bouton" data-filtre="debuts">Les débuts — 2006</button>
+        <button class="filtre-bouton" data-filtre="conventions">Conventions</button>
+        <button class="filtre-bouton" data-filtre="conferences">Conférences</button>
+        <button class="filtre-bouton" data-filtre="seminaires">Séminaires</button>
+        <button class="filtre-bouton" data-filtre="departements">Départements</button>
+        <button class="filtre-bouton" data-filtre="formations">Formations</button>
+        <button class="filtre-bouton" data-filtre="20ans">20 ans — 2026</button>
+      </div>
+
+      <div class="grille-galerie">
+        <figure class="galerie-item" data-categorie="debuts" data-plein="assets/img/galerie-01.svg" data-legende="Les débuts de la MIERR — 2006" data-anim>
+          <img src="assets/img/galerie-01.svg" alt="Les débuts — 2006">
+          <figcaption class="galerie-legende">Les débuts — 2006</figcaption>
+        </figure>
+        <figure class="galerie-item" data-categorie="debuts" data-plein="assets/img/galerie-02.svg" data-legende="Premières activités" data-anim>
+          <img src="assets/img/galerie-02.svg" alt="Premières activités">
+          <figcaption class="galerie-legende">Premières activités</figcaption>
+        </figure>
+        <figure class="galerie-item" data-categorie="debuts" data-plein="assets/img/galerie-03.svg" data-legende="Développement de l'église" data-anim>
+          <img src="assets/img/galerie-03.svg" alt="Développement de l'église">
+          <figcaption class="galerie-legende">Développement de l'église</figcaption>
+        </figure>
+        <figure class="galerie-item" data-categorie="conventions" data-plein="assets/img/galerie-04.svg" data-legende="Convention annuelle" data-anim>
+          <img src="assets/img/galerie-04.svg" alt="Convention annuelle">
+          <figcaption class="galerie-legende">Convention annuelle</figcaption>
+        </figure>
+        <figure class="galerie-item" data-categorie="conferences" data-plein="assets/img/galerie-05.svg" data-legende="Conférences" data-anim>
+          <img src="assets/img/galerie-05.svg" alt="Conférences">
+          <figcaption class="galerie-legende">Conférences</figcaption>
+        </figure>
+        <figure class="galerie-item" data-categorie="seminaires" data-plein="assets/img/galerie-06.svg" data-legende="Séminaires" data-anim>
+          <img src="assets/img/galerie-06.svg" alt="Séminaires">
+          <figcaption class="galerie-legende">Séminaires</figcaption>
+        </figure>
+        <figure class="galerie-item" data-categorie="departements" data-plein="assets/img/galerie-07.svg" data-legende="SEMIC — Département des femmes" data-anim>
+          <img src="assets/img/galerie-07.svg" alt="SEMIC">
+          <figcaption class="galerie-legende">SEMIC — Département des femmes</figcaption>
+        </figure>
+        <figure class="galerie-item" data-categorie="departements" data-plein="assets/img/galerie-08.svg" data-legende="JEMOC — Département de la jeunesse" data-anim>
+          <img src="assets/img/galerie-08.svg" alt="JEMOC">
+          <figcaption class="galerie-legende">JEMOC — Département de la jeunesse</figcaption>
+        </figure>
+        <figure class="galerie-item" data-categorie="departements" data-plein="assets/img/galerie-09.svg" data-legende="SEMIFIG — Filles Glorieuses" data-anim>
+          <img src="assets/img/galerie-09.svg" alt="SEMIFIG">
+          <figcaption class="galerie-legende">SEMIFIG — Filles Glorieuses</figcaption>
+        </figure>
+        <figure class="galerie-item" data-categorie="formations" data-plein="assets/img/galerie-10.svg" data-legende="Formations" data-anim>
+          <img src="assets/img/galerie-10.svg" alt="Formations">
+          <figcaption class="galerie-legende">Formations</figcaption>
+        </figure>
+        <figure class="galerie-item" data-categorie="conventions" data-plein="assets/img/galerie-11.svg" data-legende="Événements particuliers" data-anim>
+          <img src="assets/img/galerie-11.svg" alt="Événements particuliers">
+          <figcaption class="galerie-legende">Événements particuliers</figcaption>
+        </figure>
+        <figure class="galerie-item" data-categorie="20ans" data-plein="assets/img/galerie-12.svg" data-legende="20 ans de la MIERR — 2026" data-anim>
+          <img src="assets/img/galerie-12.svg" alt="20 ans de la MIERR — 2026">
+          <figcaption class="galerie-legende">20 ans de la MIERR — 2026</figcaption>
+        </figure>
+      </div>
+
+      <div class="avis-provisoire" style="margin-top:3rem;" data-anim>
+        <strong>Contenu à activer :</strong> ces vignettes sont des visuels de substitution. Depuis le futur tableau de bord, l'administrateur pourra ajouter des photos et créer de nouveaux albums sans toucher au code — voir LISEZ-MOI.md.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<a href="#" class="whatsapp-flottant" data-whatsapp aria-label="Contacter la MIERR sur WhatsApp">💬</a>
+
+<footer class="pied">
+  <div class="conteneur">
+    <div class="pied-grille">
+      <div>
+        <div class="pied-logo"><img src="assets/img/logo-mierr.svg" alt="MIERR"></div>
+        <p>La Mission Internationale Évangélique de Réveil et de Restauration (MIERR), fondée en 2006, est engagée dans l'annonce de l'Évangile, la formation des croyants et la restauration des vies.</p>
+        <div class="pied-reseaux">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" data-whatsapp aria-label="WhatsApp">w</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="TikTok">tt</a>
+        </div>
+      </div>
+      <div>
+        <h4>Liens rapides</h4>
+        <ul>
+          <li><a href="la-mierr.html">La MIERR</a></li>
+          <li><a href="activites.html">Activités &amp; événements</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="presse.html">Presse</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Départements</h4>
+        <ul>
+          <li><a href="departements.html#semic">SEMIC</a></li>
+          <li><a href="departements.html#jemoc">JEMOC</a></li>
+          <li><a href="departements.html#semifig">SEMIFIG</a></li>
+          <li><a href="departements.html#sections">Sections</a></li>
+          <li><a href="institut-biblique.html">Institut biblique de Sion</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>[Adresse de la MIERR]</li>
+          <li>[Téléphone]</li>
+          <li>[E-mail]</li>
+          <li><a href="contact.html">Voir la page contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pied-bas">
+      <span>© <span data-annee></span> MIERR — Tous droits réservés.</span>
+      <a href="contact.html#mentions">Mentions légales</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox">
+  <button class="lightbox-fermer" aria-label="Fermer">&times;</button>
+  <button class="lightbox-precedent" aria-label="Précédent">‹</button>
+  <img src="" alt="">
+  <button class="lightbox-suivant" aria-label="Suivant">›</button>
+  <div class="lightbox-legende"></div>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
