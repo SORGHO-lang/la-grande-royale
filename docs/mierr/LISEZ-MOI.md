@@ -133,8 +133,9 @@ visiteur, deux solutions gratuites et sans serveur :
 2. **Web3Forms** (web3forms.com) — même principe, avec une clé d'accès.
 
 Le paramètre `?objet=…` fonctionne déjà : par exemple
-`contact.html?objet=Institut%20biblique#contact` présélectionne l'objet correspondant
-dans le formulaire de contact.
+`contact.html?objet=Institut%20biblique` présélectionne l'objet correspondant dans le
+formulaire de contact (la valeur doit correspondre exactement, accents compris, à l'une
+des options du menu déroulant « Objet »).
 
 ---
 
