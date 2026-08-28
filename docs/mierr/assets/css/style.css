@@ -117,6 +117,12 @@ p { margin: 0 0 1em; }
 .section--alt { background: var(--ivoire-2); }
 .section--bleu { background: var(--bleu); color: rgba(255,255,255,.82); }
 .section--bleu h2, .section--bleu h3, .section--bleu h4 { color: #fff; }
+.section--bleu .champ label { color: #fff; }
+.section--bleu .champ label .optionnel { color: rgba(255,255,255,.55); }
+/* Cards keep their own white background even inside a dark section, so their
+   headings must stay dark — only text sitting directly on the dark
+   background should turn white. */
+.section--bleu .carte h2, .section--bleu .carte h3, .section--bleu .carte h4 { color: var(--bleu); }
 .section-tete { max-width: 720px; margin: 0 0 3rem; }
 .section-tete.texte-centre { margin-left: auto; margin-right: auto; }
 
@@ -302,6 +308,7 @@ p { margin: 0 0 1em; }
   background: linear-gradient(180deg, rgba(10,17,32,.35) 0%, rgba(10,17,32,.85) 100%);
 }
 .banniere-contenu { position: relative; z-index: 1; padding: 90px 0 44px; width: 100%; }
+.banniere-contenu h1 { color: #fff; }
 .fil-ariane { font-size: 0.8rem; color: rgba(255,255,255,.65); margin-bottom: 1em; }
 .fil-ariane a:hover { color: var(--or-clair); }
 
